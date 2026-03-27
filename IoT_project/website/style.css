@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+:root {
+  --bg: #f2efe5;
+  --surface: #fffef8;
+  --ink: #1f2933;
+  --muted: #6b7280;
+  --accent: #157f7f;
+  --accent-2: #f4b942;
+  --danger: #d64f4f;
+  --ring: rgba(21, 127, 127, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top right, #e1f5f5 0%, transparent 35%),
+    radial-gradient(circle at bottom left, #ffe7c2 0%, transparent 30%),
+    var(--bg);
+}
+
+.layout {
+  width: min(1100px, 94vw);
+  margin: 24px auto 36px;
+}
+
+.hero {
+  background: linear-gradient(120deg, #0f766e, #115e59);
+  color: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 12px 35px rgba(17, 94, 89, 0.25);
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(24px, 4vw, 34px);
+}
+
+.hero p {
+  margin: 8px 0 0;
+  opacity: 0.9;
+}
+
+.stats {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ece8dc;
+}
+
+.card h2 {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card p {
+  margin: 8px 0 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.card-wide {
+  grid-column: span 2;
+}
+
+.events {
+  margin-top: 16px;
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 14px;
+  border: 1px solid #ece8dc;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.events h2 {
+  margin: 0 0 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid #efeadf;
+  font-size: 14px;
+}
+
+th {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+tr:nth-child(odd) td {
+  background: #fffcf2;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge-rfid {
+  background: rgba(21, 127, 127, 0.12);
+  color: var(--accent);
+}
+
+.badge-entry {
+  background: rgba(244, 185, 66, 0.2);
+  color: #8a5a00;
+}
+
+.badge-ir {
+  background: rgba(214, 79, 79, 0.15);
+  color: var(--danger);
+}
+
+@media (max-width: 760px) {
+  .card-wide {
+    grid-column: span 1;
+  }
+
+  .card p {
+    font-size: 24px;
+  }
+
+  th, td {
+    font-size: 12px;
+    padding: 8px 6px;
+  }
+}

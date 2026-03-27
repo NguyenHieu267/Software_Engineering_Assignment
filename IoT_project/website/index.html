@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Parking Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="layout">
+    <section class="hero">
+      <h1>Smart Parking Control</h1>
+      <p>ESP32 + RFID + IR + Servo + LCD</p>
+    </section>
+
+    <section class="stats">
+      <article class="card">
+        <h2>Total Spaces</h2>
+        <p id="total-spaces">-</p>
+      </article>
+      <article class="card">
+        <h2>Empty Spaces</h2>
+        <p id="empty-spaces">-</p>
+      </article>
+      <article class="card">
+        <h2>Occupied Spaces</h2>
+        <p id="occupied-spaces">-</p>
+      </article>
+      <article class="card">
+        <h2>IR Sensor</h2>
+        <p id="ir-state">-</p>
+      </article>
+      <article class="card card-wide">
+        <h2>Last RFID UID</h2>
+        <p id="last-uid">-</p>
+      </article>
+    </section>
+
+    <section class="events">
+      <h2>Latest Events</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Type</th>
+            <th>UID</th>
+            <th>Empty</th>
+            <th>Occupied</th>
+          </tr>
+        </thead>
+        <tbody id="events-body"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.javascript"></script>
+</body>
+</html>

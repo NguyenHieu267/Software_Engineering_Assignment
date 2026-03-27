@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "http://dl.espressif.com/dl/schemas/esp_idf",
+    "_comment": "Configuration file for ESP-IDF Eclipse plugin.",
+    "_warning": "Use / or \\ when specifying path. Single backslash is not allowed by JSON format.",
+    "gitPath": "D:/esp/Espressif/tools/idf-git/2.44.0/cmd/git.exe",
+    "idfToolsPath": "D:/esp/Espressif",
+    "idfSelectedId": "esp-idf-9f8273dcadfce1733d876ba90b3ef3db",
+    "idfInstalled": {
+        "esp-idf-9f8273dcadfce1733d876ba90b3ef3db": {
+            "version": "5.3",
+            "python": "D:/esp/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe",
+            "path": "D:/esp/Espressif/frameworks/esp-idf-v5.3.3/"
+        }
+    }
+}
